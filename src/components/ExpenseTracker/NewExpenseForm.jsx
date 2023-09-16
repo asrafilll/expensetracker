@@ -33,7 +33,7 @@ export const NewExpenseForm = ({ cancelAdd }) => {
     );
     const result = await res.json();
     clearData();
-    cancelAdd;
+    cancelAdd();
     router.refresh();
   }
 
